@@ -63,7 +63,7 @@ $(function () {
       if (!_p) _p = new google.maps.Polyline ({ map: _vm, strokeColor: 'rgba(249, 39, 114, .45)', strokeWeight: 5 });
       _p.setPath (_ms.column ('p'));
 
-      if (!_mz) _mz = new OAML ({ map: _vm, draggable: false, optimized: false, labelContent: '<img src="img/m2.png" />', icon: {path: 'M 0 0'}, labelAnchor: new google.maps.Point (40 / 2, 69), labelClass: 'm'});
+      if (!_mz) _mz = new OAML ({ map: _vm, draggable: false, optimized: false, labelContent: '<img src="img/m4.png" />', icon: {path: 'M 0 0'}, labelAnchor: new google.maps.Point (80 / 2, 75), labelClass: 'm'});
       _mz.setPosition (_ms.last ().p);
       _mz.setZIndex (999);
 
