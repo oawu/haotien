@@ -68,6 +68,13 @@ html {
   .gmnoprint.gm-bundled-control, .gm-style-cc {
     display: none;
   }
+  .gmnoprint.gm-bundled-control, .gm-style-cc, a[href^="http://maps.google.com/maps"], a[href^="https://maps.google.com/maps"] {
+    display: none !important;
+  }
+  
+  > div:not(:first-child) {
+    display: none !important;
+  }
 }
 .m {
   width: 80px;
