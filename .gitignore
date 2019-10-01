@@ -1,7 +1,6 @@
 .DS_Store
 sftp-config*
 
-cmd/.sass-cache/*
-cmd/package-lock.json
-cmd/node_modules/*
-cmd/npm-debug.log
+**/npm-debug.log
+**/node_modules/*
+**/package-lock.json

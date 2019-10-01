@@ -1,0 +1,32 @@
+//
+// @author      OA Wu <comdan66@gmail.com>
+// @copyright   Copyright (c) 2015 - 2019, Ginkgo
+// @license     http://opensource.org/licenses/MIT  MIT License
+// @link        https://www.ioa.tw/
+//
+
+@import "compass/css3/font-face";
+
+@include font-face("icon", font-files(
+  "icomoon/fonts/icomoon.eot",
+  "icomoon/fonts/icomoon.woff",
+  "icomoon/fonts/icomoon.ttf",
+  "icomoon/fonts/icomoon.svg"));
+
+*[class^="icon-"]:before, *[class*=" icon-"]:before {
+  font-family: "icon";
+
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+}
+
+.icon-4:before { content: "\f0004"; }
+.icon-1:before { content: "\f0001"; }
+.icon-2:before { content: "\f0002"; }
+.icon-3:before { content: "\f0003"; }
+.icon-5:before { content: "\f0005"; }
+.icon-6:before { content: "\f0006"; }
+.icon-7:before { content: "\f0007"; }
+.icon-8:before { content: "\f0008"; }
