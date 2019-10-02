@@ -2,6 +2,6 @@
 /*
  * @author      OA Wu <comdan66@gmail.com>
  * @copyright   Copyright (c) 2015 - 2019, Ginkgo
- * @license     http://opensource.org/licenses/MIT  MIT License
+ * @license     https://creativecommons.org/licenses/by-nc-nd/3.0/tw/ 姓名標示-非商業性-禁止改作 3.0 台灣 (CC BY-NC-ND 3.0 TW)
  * @link        https://www.ioa.tw/
  */
