@@ -22,7 +22,7 @@ var _mMap = null;
 var _isGetting = false;
 
 var _datas = [];
-var _markers = [];
+// var _markers = [];
 var _nowMarker = null;
 // var _polyline = null;
 var _myMarker = null;
@@ -234,14 +234,14 @@ $(function() {
         if (_myMarker === null) _myMarker = new OAM({ map: _mMap, width: 16, height: 16, className: 'myMarker', html: "" });
         _myMarker.setPosition(genLatLng([[Geo.data.lat, Geo.data.lng]]));
 
-        if (_markers.length) {
-          var b = new google.maps.LatLngBounds();
-          b.extend(_myMarker.getPosition());
-          for (var j in _markers) b.extend(_markers[j].getPosition());
-          _mMap.fitBounds(b);
-        } else {
+        // if (_markers.length) {
+        //   var b = new google.maps.LatLngBounds();
+        //   b.extend(_myMarker.getPosition());
+        //   for (var j in _markers) b.extend(_markers[j].getPosition());
+        //   _mMap.fitBounds(b);
+        // } else {
           _mMap.setOptions({ center: _myMarker.getPosition() });
-        }
+        // }
       }).appendTo($body);
     },
     show: function(closure) {
@@ -260,7 +260,7 @@ $(function() {
   };
 
   var fetch = function(course) {
-    _markers = _markers.map(markerRemove).filter(filterNotNull);
+    // _markers = _markers.map(markerRemove).filter(filterNotNull);
 
     if (!_datas.length) {
       if (_nowMarker !== null)
@@ -270,7 +270,7 @@ $(function() {
     if (_nowMarker === null) _nowMarker = new OAM({ map: _mMap, width: 80, height: 75, className: 'nowMarker', html: '<img src="img/m4.png" />'});
     _nowMarker.setPosition(genLatLng(_datas));
 
-    _markers = cluster(_datas, _mMap.zoom, 1, true).map(function(data) { return new OAM({ map: _mMap, position: genLatLng(data), width: 8, height: 8, className: 'marker', html: ""}); });
+    // _markers = cluster(_datas, _mMap.zoom, 1, true).map(function(data) { return new OAM({ map: _mMap, position: genLatLng(data), width: 8, height: 8, className: 'marker', html: ""}); });
     
     // if (_polyline === null) _polyline = new google.maps.Polyline({ map: _mMap, strokeColor: 'rgba(249, 39, 114, .45)', strokeWeight: 5 });
     // _polyline.setPath(_markers.map(function(marker) { return marker.getPosition(); }));
