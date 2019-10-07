@@ -24,7 +24,7 @@ var _isGetting = false;
 var _datas = [];
 var _markers = [];
 var _nowMarker = null;
-var _polyline = null;
+// var _polyline = null;
 var _myMarker = null;
 
 var _intervalTimer = null;
@@ -272,8 +272,8 @@ $(function() {
 
     _markers = cluster(_datas, _mMap.zoom, 1, true).map(function(data) { return new OAM({ map: _mMap, position: genLatLng(data), width: 8, height: 8, className: 'marker', html: ""}); });
     
-    if (_polyline === null) _polyline = new google.maps.Polyline({ map: _mMap, strokeColor: 'rgba(249, 39, 114, .45)', strokeWeight: 5 });
-    _polyline.setPath(_markers.map(function(marker) { return marker.getPosition(); }));
+    // if (_polyline === null) _polyline = new google.maps.Polyline({ map: _mMap, strokeColor: 'rgba(249, 39, 114, .45)', strokeWeight: 5 });
+    // _polyline.setPath(_markers.map(function(marker) { return marker.getPosition(); }));
 
     return course && course();
   };
